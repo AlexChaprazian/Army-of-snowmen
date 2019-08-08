@@ -11,6 +11,6 @@ To add a screenshot, please replace `screenshot.png` with
 your own screenshot.
 -->
 
-## <your-project-name>
+## Army of Snowmen
 
-a brief description of your project goes here
+An army of snowmen are banding together
