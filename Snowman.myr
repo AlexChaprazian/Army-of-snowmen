@@ -1,0 +1,107 @@
+
+function snowman(x,z){
+  resetCursor();
+    let g=group();
+setColor('snow');
+setPosition(x+0,2.1,z+0);
+setScale(0.7,0.7,0.7);
+setRotation(28);
+g.add(dodecahedron());
+
+
+setPosition(x+0,1,z+0);
+setScale(1,1,1);
+setRotation(50);
+g.add(dodecahedron());
+
+setColor('orange');
+setPosition(x+0,2.4,z+0.5);
+setScale(0.1,0.5,0.1);
+setRotation(85);
+g.add(cone());
+
+setColor('black');
+setPosition(x-0.15,2.55,z+0.5);
+setScale(0.1,0.1,0.1);
+setRotation(-30);
+g.add(circle());
+
+setColor('black');
+setPosition(x+0.15,2.55,z+0.5);
+setScale(0.1,0.1,0.1);
+setRotation(-30);
+g.add(circle());
+
+setPosition(x+0.8,1.5,z+0.5);
+setScale(0.1,0.8,0.1);
+setColor('#8c5e3b');
+setRotation(50,60,0);
+g.add(box());
+
+setPosition(x-1,1.5,z+0.15);
+setScale(0.1,0.8,0.1);
+setColor('#8c5e3b');
+setRotation(-50,65,0);
+let b = box();
+
+setDuration(500);
+setMagnitude(0.5);
+g.add(goUp(b));
+
+
+setPosition(12,3,27);
+setScale(0.5,1,0.5);
+setColor('black');
+setRotation(0,0,0);
+g.add(box());
+
+
+setPosition(12,2.7,27);
+setScale(0.7,0.7,0.7);
+setColor('black');
+setRotation(90,0,90);
+g.add(circle());
+return g;
+}
+
+for(let i=0; i<27; i=i+3){
+    for(let j=0; j<30; j=j+3){
+         snowman(i,j);
+    }
+ 
+}
+
+resetCursor();
+
+for( let w=0; w<5; w++){
+    for(let m=0; m<15; m++){
+        for(let a=0; a<5; a++){
+            let xPos= Math.random()*30;
+            let yPos= Math.random()*40;
+            let zPos= Math.random()*30;
+            
+            snow(xPos,yPos,zPos);
+        }
+        
+    }
+    
+}
+
+function snow(x,y,z){
+    
+    setXPos(x);
+    setYPos(y);
+    setZPos(z);
+    
+    setColor('white');
+    setScale(0.3,0.3,0.3);
+    makeDroppable(sphere(), 0.4);
+   
+}
+
+
+
+
+
+
+
