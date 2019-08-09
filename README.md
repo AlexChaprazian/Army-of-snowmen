@@ -13,4 +13,4 @@ your own screenshot.
 
 ## Army of Snowmen
 
-An army of snowmen are banding together
+An army of snowmen band together during a snow strom lead by the snowman with a top hat
