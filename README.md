@@ -14,3 +14,6 @@ your own screenshot.
 ## Army of Snowmen
 
 An army of snowmen band together during a snow strom lead by the snowman with a top hat
+This project was made during the Summer 2019 event SoarCS ran by Fred Martin at UML.
+It was meant to introduce first gen college students to what life at university would be like
+including the aspects of taking part in a computer science major.
